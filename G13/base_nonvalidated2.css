@@ -1,0 +1,51 @@
+/******** Bug on W3C validator causes this line to be non-validated, when in fact
+it is a valid css property *******************/
+
+body {
+	height:calc(100% - 90px);
+}
+
+
+/******** FADE IN TRANSITIONS FOR PAGE CONTENT ***********/
+/******** these css browser specific properties are not W3C validated.
+Browsers will support them in the future *******************/
+
+#newsContent, #aboutContent, .mediaContent, #forumContent, #contactContent, #loginContent, #registerContent  {
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+	}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

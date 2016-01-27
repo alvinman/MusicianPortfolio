@@ -1,0 +1,1343 @@
+/* master reset css */ 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*////////////////MAIN PAGE (NEWS) STYLING////////////*/
+/* FONTS AVAILABLE FOR USE: "Dosis" & "Anaheim" */	
+	
+html {
+	height: 100%;
+	}
+	
+body {
+	color: #FFFFFF;
+	font-family: "Anaheim", Arial, Sans-serif;
+	/*font-family: 'Dosis', sans-serif;*/
+
+	}
+
+/***********************************************/
+
+header {
+	background-color: #2b2b2b;
+	min-width: 800px;
+	width: 100%;
+	height: 90px;
+	margin: auto;
+	position:relative;
+}
+
+#logoAndIcons {
+	position:absolute;
+	height:95px;
+	width: 500px;
+	top:0;
+	bottom:0;
+	left:33px;
+	right:auto;
+	margin:auto;
+	}
+	
+	
+#logo {
+	opacity: 0.7;
+	float:left;
+	margin-right: 100px;
+	margin-left: 25px;
+	margin-top: 13px;
+	}
+	
+#logo:hover {
+	opacity: 1.0;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	}
+	
+#youtube {
+	padding-top: 29px;
+	padding-right: 15px;
+	height: 30px;
+	width: 30px;
+	opacity: 0.6;
+	}
+	
+#twitter {
+	padding-right: 15px;
+	height: 30px;
+	width: 30px;
+	opacity: 0.6;
+	}
+	
+#instagram {
+	padding-right: 15px;
+	height: 30px;
+	width: 30px;
+	opacity: 0.6;
+	}
+	
+#facebook {
+	padding-right: 14px;
+	height: 30px;
+	width: 30px;
+	opacity: 0.6;
+	}
+	
+#googleplus {
+	height: 30px;
+	width: 30px;
+	opacity: 0.6;
+	}
+	
+#youtube:hover,
+#twitter:hover,
+#instagram:hover,
+#facebook:hover,
+#googleplus:hover {
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	}
+
+#register {
+	position: absolute;
+	right: 120px;
+	top: 30px;
+	}
+	
+#currentUsername {
+	color: #30ccff;
+	position: absolute;
+	right: 33px;
+	top: 50px;
+	font-weight: bold;
+}
+
+
+a:link, a:visited, a:hover, a:active {
+	color:#FFFFFF;
+	text-decoration:none;
+	}    
+
+#signIn {
+	position: absolute;
+	right: 33px;
+	top: 30px;
+	}
+	
+#logout {
+	position: absolute;
+	right: 33px;
+	top: 30px;
+	}
+	
+#account {
+	position: absolute;
+	right: 150px;
+	top: 30px;
+	}
+	
+	
+#register:hover,
+#signIn:hover,
+#account:hover,
+#logout:hover {
+	cursor: pointer;
+	color: #30ccff;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	}
+	
+#subscribeEmail {
+	position: absolute;
+	right: 135px;
+	bottom: 30px;
+	padding: 4px;
+	background-color: #4c4c4c;
+	border: 1px solid #6e6e6e;
+	outline:0;
+	color: #30ccff;
+	font-family: Anaheim;
+	width: 150px;
+	box-shadow: none;
+	}
+	
+#subscribeError {
+	position: absolute;
+	right: 138px;
+	bottom: 9px;
+	padding: 4px;
+	outline:0;
+	color: red;
+	font-family: Anaheim;
+	width: 150px;
+	font-size: 0.8em;
+	}
+	
+#subscribe {
+	position: absolute;
+	right: 34px;
+	bottom: 30px;
+	border: none;
+	outline: 0;
+	padding: 4px;
+	background-color: grey;
+	color: #FFFFFF;
+	font-family: Anaheim;
+	width: 90px;
+	}
+	
+#subscribe:hover {
+	background-color: #0068a8;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	}
+	
+#subscribeText {
+	position: absolute;
+	bottom: 60px;
+	right: 135px;
+	font-size: 0.8em;
+	color: #30ccff;
+	}
+
+#pageWrapper {
+	min-height: 100%;
+	background-image:url('resources/sidenav_background.png');
+	background-repeat:repeat-y;
+	}
+	
+
+
+	
+#navbar {
+	height: 100%;
+	float: left;
+	}
+	
+#navHeading {
+	background-color: #0068A8;
+	height: 40px;
+	width: 188px;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+	font-size: 1.5em;
+	}
+
+#navPanel {
+	width:188px;
+	background-color: #2b2b2b;
+	height: 100%;
+	}
+
+
+.navEffect {
+	padding: 20px;
+	list-style-type: none;
+	}
+	
+.navEffect li {
+	padding-top: 40px;
+	}
+	
+.navEffect li a {
+	color: #e0e0e0;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 200;
+	font-size: 1.1em;
+	width: 100%;
+	}
+	
+	
+.clear {
+	clear:both;
+	}
+
+/*/////////////MEDIA SONG PAGE STYLES////////////*/
+	
+.mediaContent {
+	min-width: 612px;
+	margin-left: 188px;
+	color: #000000;
+	font-family: "Dosis";
+	}
+	
+#subNav {
+	color: #000000;
+	font-size: 2em;
+	position: relative;
+	height: 100%;
+	font-family: "Anaheim";
+	}
+
+#subNavWrapper {
+	height: 60px;
+	padding-top: 30px;
+	padding-left: 62px;
+	padding-right: 62px;
+	margin: auto;
+	top:0;
+	left:0;
+	right:0;
+	position: absolute;
+	width: 380px;
+	overflow: hidden;
+	
+
+	}
+
+#songButton {
+	float: left;
+	padding-right: 20px;
+	}
+
+#songButton a {
+	text-decoration: none;
+	}
+
+#videoButton {
+	float: left;
+	padding-right: 20px;
+	
+	}
+
+#galleryButton {
+
+	}
+
+#whiteSpace {                       /* get rid of this later if possible*/                      
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 100px;
+	}
+
+
+	
+.songElement {
+	text-align: center;
+	}
+
+	
+.songElement > * {
+	vertical-align: middle;
+	padding-bottom: 50px;
+	line-height: 130%;
+	letter-spacing: 1px;
+	}
+	
+.audioPlayers {
+	width: 30%;
+	height: 35px;   /*affects internet explorer only*/
+	display: inline-block;
+	padding-right: 30px;
+	padding-left: 30px;
+	
+	}
+	
+.songDescription {
+	text-align: left;
+	font-weight: 600;
+	display: inline-block;
+	padding-right: 20px;
+	}
+
+.songDescriptionContent {
+	width: 270px;
+	text-align: left;
+	display: inline-block;
+	}
+
+.blueTitle {
+	color: #0068A8;
+	font-weight: 600;
+	}
+	
+.songTypeWrapper {
+	text-align: center;
+	}
+	
+.title {
+	font-size: 1.5em;
+	padding-bottom: 50px;
+	color: #0068A8;
+	width: 30%;
+	display: inline-block;
+	padding-right: 30px;
+	text-align: left;
+	}
+	
+	
+.filler {
+	height: 10px;
+	width: 300px;
+	display: inline-block;
+	}
+	
+.mediaType {
+	text-align: center;
+	}
+
+.mediaTypeTitle {
+	font-size: 2.0em;
+	padding-bottom: 50px;
+	color: #0068A8;
+	font-weight: 900;
+	width: 30%;
+	display: inline-block;
+	padding-right: 30px;
+	text-align: left;
+	}
+	
+#songBlock {
+display: inline-block;
+width: 95px;
+height: 5px; 
+text-align: center;
+background: #bababa;
+margin-top: 90px;
+margin-right: 281px;
+}
+
+/*/////////////MEDIA VIDEO PAGE STYLES////////////*/
+
+.videoElement {
+	text-align: center;
+	}
+	
+.videoElement > * {
+	vertical-align: top;
+	line-height: 130%;
+	letter-spacing: 1px;
+	padding-bottom: 60px;
+	}
+	
+.videoDescription {
+	text-align: left;
+	display: inline-block;
+	width: 250px;
+	padding-right: 40px;
+	}
+	
+.videoContainerWrapper {
+	display:inline-block;
+	width: 50%;
+	max-width: 1200px;
+	}
+	
+.videoContainer {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height:0;
+overflow: hidden;
+	}
+	
+.videoContainer iframe {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	}
+	
+
+.blockWrapper {
+	text-align: center;
+	letter-spacing: 4px;
+	}
+	
+#videoBlock {
+display: inline-block;
+width: 95px;
+height: 5px; 
+text-align: center;
+background: #bababa;
+margin-top: 90px;
+margin-right: 44px;
+}
+
+
+/************MEDIA GALLERY PAGE STYLES ************/
+
+#galleryBlock {
+display: inline-block;
+width: 95px;
+height: 5px; 
+text-align: center;
+background: #bababa;
+margin-top: 90px;
+margin-right: -220px;
+	}
+	
+
+#galleryContent {
+	overflow: hidden;
+	margin-left: 70px;
+	margin-right: 70px;
+	}
+
+.imageTiles {
+	width: 33%;
+	padding-bottom: 33%;
+	background: #FFFFFF;
+	color: #FFF;
+	position: relative;
+	float: left;
+	}
+
+.tileContent {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: #66F;
+	opacity: 0.6;
+	overflow: hidden;
+	}
+
+.tileContent img {
+	height: 152%;
+	}
+	
+   
+.tileContent:hover {
+	opacity: 1;
+	-webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+	}
+   
+	
+	
+@media only screen and (max-width : 800px) {
+		/* smart device / 1 tile */
+		.imageTiles {
+		width: 100%;
+		padding-bottom: 100%;
+		}
+	}
+
+@media only screen and (max-width : 1000px) and (min-width : 801px) {
+		/* Small desktop / ipad view: 2 tiles */
+		.imageTiles {
+		width: 50%;
+        padding-bottom: 50%;
+        }
+    }
+@media only screen and (max-width : 1200px) and (min-width : 1001px) {
+		/* Medium desktop: 3 tiles */
+		.imageTiles {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+        }
+    }
+@media only screen and (max-width : 1400px) and (min-width : 1201px) {
+		/* Large desktop: 4 tiles */
+		.imageTiles {
+		width: 25%;
+		padding-bottom: 25%;
+		}
+	}
+		
+@media only screen and (min-width : 1401px) {
+		/* Huge desktop: 5 tiles */
+		.imageTiles {
+		width: 20%;
+		padding-bottom: 20%;
+		}
+	}
+
+	
+/***************** NEWS PAGE STYLING **********************/
+
+#newsContent {
+	color: #000000;
+	margin-left: 188px;
+	font-family: "Anaheim";
+	min-width: 612px;
+	}
+
+.pageHeading {
+	font-size: 3.0em;
+	height: 70px;
+	color: #0068A8;
+	padding-top: 30px;
+	padding-left: 60px;
+	}
+
+#newsItems {
+	text-align: center;
+	}
+	
+.newsElement {
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	}
+	
+.newsElement img {
+	width: 100%;
+	}
+
+.newsElement > * {
+	vertical-align: top;
+	}
+	
+.date {
+	display: inline-block;
+	width: 80px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	}
+
+	
+.dateBox {
+	text-align: center;
+	background: #0068A8;
+	width: 90px;
+	height: 90px;
+
+	}
+	
+.dateText {
+	color: #FFFFFF;
+	font-size: 2.0em;
+	padding-top: 13px;
+	}
+	
+.pictureAndDescription {
+	text-align: left;
+	display: inline-block;
+	width: 60%;
+	max-width: 2000px;
+	}
+	
+.pictureAndDescription p {
+	padding-top: 20px;
+	line-height: 120%;
+	}
+	
+.headline {
+	font-size: 1.5em;
+	font-weight: bold;
+	}
+	
+/***************** CONTACT PAGE STYLING *******************/
+
+#contactContent {
+	color: #000000;
+	margin-left: 188px;
+	font-family: "Dosis";
+	min-width: 612px;
+	}
+	
+#contactForm {
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+	padding-right: 80px;
+	padding-bottom: 60px;
+	padding-left: 20px;
+	font-family: "Anaheim";
+	}
+	
+#contactLinks {
+	display: inline-block;
+	padding-right: 100px;
+	text-align: left;
+	padding-bottom: 50px;
+	}
+
+#contactElements {
+	text-align: center;
+	}
+	
+#thankyou {
+	width: 300px;
+	margin: auto;
+	font-size: 1.2em;
+	font-family: "Anaheim";
+	}
+	
+	
+#contactElements > * {
+	vertical-align: top;
+	}
+		
+#contactInput {
+	}
+		
+#contactInput input,
+#contactInput textarea {
+	width: 100%;
+	font-family: "Anaheim";
+	resize: none;
+	}
+	
+.inputTitle {
+	color: #0068A8;
+	font-size: 1.0em;
+	padding-bottom: 5px;
+	display: inline;
+	font-family: "Anaheim";
+	}
+	
+#nameError, #emailError, #subjectError, #messageError, #firstnameError, #lastnameError, #usernameError, #passError, #passLengthError {
+	font-size: 0.8em;
+	display: inline;
+	color: red;
+	padding-left: 10px;
+	}
+	
+#inputName {
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+
+#inputEmail {
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+
+#Subject {
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+
+#inputSubject {
+	height: 200px;
+	border: 1px solid grey;
+	margin-bottom: 2px;
+	}
+	
+.Submit {
+	border: none;
+	outline: 0;
+	padding: 4px;
+	background-color: grey;
+	color: #FFFFFF;
+	font-family: "Anaheim";
+	width: 90px;
+	}
+
+.Submit:hover {
+	background-color: #0068a8;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#socialMedia td {
+	padding-right: 20px;
+	padding-bottom: 10px;
+	}
+
+#socialMedia a {
+	text-decoration: none;
+	color: #858585;
+	font-weight: bold;
+	}
+
+#socialMedia a:hover {
+	color: #000000;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	}
+
+/********FORUM PAGE STYLING *********/
+
+#forumContent {
+	color: #000000;
+	margin-left: 188px;
+	font-family: "Dosis";
+	min-width: 612px;
+	}
+	
+#forums {
+	color: #000000;
+	margin-left: 100px;
+	padding-bottom: 70px;
+	}	
+	
+#forums a:link, 
+#forums a:visited, 
+#forums a:hover, 
+#forums a:active {
+	color:#000000;
+	}    
+	
+#forumTable {
+	width: 90%;
+	margin: auto;
+	}
+	
+#forumTable tr {
+	background-color: #FFFFFF;
+	}
+	
+#forumTable tr:nth-child(odd) {
+	background-color: #ecf0f2;
+	}
+	
+#forumTable td {
+	line-height: 30px;
+	}
+
+#forumHead td {
+	background-color: #0068A8;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+#forumTable2 {
+	width: 100%;
+	}
+	
+#createNewTopic a:link, 
+#createNewTopic a:visited, 
+#createNewTopic a:hover, 
+#createNewTopic a:active {
+	color:#FFFFFF;
+	}   
+	
+.centerCol {
+	text-align: center;
+	}
+	
+#firstCol {
+	width: 6%;
+	}
+
+#secondCol {
+	width: 53%;
+	}
+	
+#thirdCol {
+	width: 13%;
+	}
+	
+#createNewTopic {
+	background-color: grey;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 5px;
+	}
+	
+#createNewTopic:hover {
+	background-color: #0068a8;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	}
+	
+/*** ADD TOPIC FORM STYLING ***/
+
+#newTopic {
+	color: #000000;
+	margin-left: 100px;
+	padding-bottom: 70px;
+	width: 500px;
+	margin: auto;
+	}	
+	
+#newTopic td {
+	line-height: 30px;
+	}
+
+#newTopicTable {
+	background-color: #FFFFFF;
+	border: none;
+	}
+	
+#topicHead {
+	font-weight: bold;
+	background-color: #0068A8;
+	color: #FFFFFF;
+	}
+	
+#firstCol2 {
+	width: 14%;
+	}
+	
+#secondCol2 {
+	width: 2%;
+	}
+	
+#thirdCol2 {
+	width: 84%;
+	}
+	
+#detail {
+	vertical-align: top;
+	}
+
+#newTopicTable input,
+#newTopicTable textarea {
+	font-family: "Anaheim";
+	}
+	
+/*** VIEW TOPIC FORM STYLING ***/
+#responseForum {
+	margin:auto;
+	width: 500px;
+	line-height:30px;
+	padding-bottom: 70px;
+	}
+
+#topic {
+	background-color: #FFFFFF;
+	border: 2px solid #0068A8;
+	margin: auto;
+	}
+	
+#topic td {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	
+#response {
+	width: 100%;
+	background-color: #ededed;
+	}
+	
+#response td {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	
+#yourResponse {
+	width: 100%;
+	background-color: #FFFFFF;
+	}
+	
+#responseText {
+	vertical-align: top;
+	}
+	
+#yourResponse textarea {
+	font-family: "Anaheim";
+	resize: none;
+	}
+	
+#firstCol3 {
+	width: 18%;
+	}
+	
+#secondCol3 {
+	width: 5%;
+	}
+	
+#thirdCol3 {
+	width: 77%;
+	}
+
+	
+
+
+/**** ABOUT PAGE STYLES *******/
+#aboutContent {
+	min-width: 612px;
+	margin-left: 188px;
+	font-family: "Anaheim";
+	padding-right: 50px;
+	}
+
+#aboutWrapper {
+	margin:auto;
+	max-width: 2000px;
+	}
+	
+.aboutText {
+	padding-left: 80px;
+	min-width: 300px;
+	color:black;
+	letter-spacing: 1px;
+	line-height: 130%;
+	}
+
+#aboutPicture {
+	padding-left: 30px;
+	padding-bottom: 15px;
+	padding-right: 50px;
+	float: right;
+	width:70%;
+	height:70%;
+	min-width: 300px;
+	max-width: 1200px;
+	}	
+	
+#aboutPicture2 {
+	padding-left: 30px;
+	padding-bottom: 15px;
+	padding-right: 50px;
+	float: left;
+	width: 50%;
+	height: 50%;
+	max-width: 604px;
+	max-height: 431px;
+
+	}	
+	
+#aboutPicture3 {
+	padding-left: 30px;
+	padding-bottom: 15px;
+	padding-right: 50px;
+	float: right;
+	width: 50%;
+	height: 50%;
+	max-width: 604px;
+	max-height: 453px;
+
+	}	
+	
+#aboutPicture4 {
+	padding-left: 30px;
+	padding-bottom: 15px;
+	padding-right: 50px;
+	float: left;
+	width: 50%;
+	height: 50%;
+	max-width: 604px;
+	max-height: 401px;
+	}	
+
+.caption {
+	color: grey;
+	font-size: 0.9em;
+	padding-left: 35px;
+	padding-right: 35px;
+	text-align: center;
+	}
+	
+/* ***ABOUT PAGE STYLES ****/
+
+
+
+/**********REGISTER PAGE STYLES ************/
+
+#registerContent {
+	color: #000000;
+	margin-left: 188px;
+	font-family: "Dosis";
+	min-width: 612px;
+	}
+	
+#registerForm {
+	display: inline-block;
+	width: 50%;
+	max-width: 800px;
+	text-align: left;
+	padding-right: 150px;
+	padding-bottom: 60px;
+	padding-left: 20px;
+	}
+	
+
+#registerElements {
+	text-align: center;
+	}
+	
+#registerElements > * {
+	vertical-align: top;
+	}
+		
+#registerInput {
+	padding-left: 30px;
+	}
+		
+#registerInput input { 
+	font-family: "Anaheim";
+	}
+	
+#inputFirstName {
+
+	width: 100%;
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+	
+#inputLastName {
+
+	width: 100%;
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+	
+#inputUsername {
+
+	width: 100%;
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+	
+#inputPassword {
+
+	width: 100%;
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+
+#checkPassword {
+
+	width: 100%;
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+	
+#inputEmail {
+
+	width: 100%;
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+	
+#inputSubscription {
+	width: 15px;
+	height: 15px;
+	}
+	
+#inputSubscriptionLabel {
+	font-size: 0.8em;
+	}
+	
+	
+#registerSubmit {
+	margin-top: 15px;
+	border: none;
+	outline: 0;
+	padding: 4px;
+	background-color: grey;
+	color: #FFFFFF;
+	font-family: Anaheim;
+	width: 90px;
+	}
+
+#registerSubmit:hover {
+	background-color: #0068a8;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+/*************LOGIN PAGE **************/
+
+#loginContent {
+	color: #000000;
+	margin-left: 188px;
+	font-family: "Dosis";
+	min-width: 612px;
+	}
+	
+#loginForm {
+	display: inline-block;
+	width: 50%;
+	max-width: 800px;
+	text-align: left;
+	padding-right: 150px;
+	padding-bottom: 60px;
+	padding-left: 20px;
+	}
+	
+
+#loginElements {
+	text-align: center;
+	}
+	
+#loginElements > * {
+	vertical-align: top;
+	}
+		
+#loginInput {
+	padding-left: 30px;
+	}
+		
+#loginInput input { 
+	font-family: "Anaheim";
+	}
+	
+	
+#inputUsername {
+
+	width: 100%;
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+	
+#inputPassword {
+
+	width: 100%;
+	border: 1px solid grey;
+	height: 25px;
+	margin-bottom: 15px;
+	}
+
+	
+#loginSubmit {
+	margin-top: 15px;
+	border: none;
+	outline: 0;
+	padding: 4px;
+	background-color: grey;
+	color: #FFFFFF;
+	font-family: Anaheim;
+	width: 90px;
+	}
+
+#loginSubmit:hover {
+	background-color: #0068a8;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loginErrorMessage {
+	margin: auto;
+	width: 200px;
+	color: red;
+	}
+
+/******** ACCOUNT PAGE STYLING ************/
+
+#accountElements {
+	color: #000000;
+	}
+	
+#accountInfo {
+	width: 300px;
+	margin: auto;
+	text-align: left;
+	border: 2px solid #b8b8b8;
+	padding: 10px;
+	}
+	
+.accountButtons a:link, 
+.accountButtons a:visited, 
+.accountButtons a:hover, 
+.accountButtons a:active {
+	color:#FFFFFF;
+	}   
+	
+.accountButtons {
+	line-height: 40px;
+	text-align: center;
+	background-color: grey;
+	margin-top: 10px;
+	font-family: "Anaheim";
+	}
+	
+.accountButtons:hover {
+	background-color: #0068a8;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	}
+	
+#deleteButton {
+	line-height: 40px;
+	text-align: center;
+	background-color: grey;
+	}
+	
+#deleteButton:hover {
+	background-color: #0068a8;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	}
+	
+
+.accountTitle {
+	color: #000000;
+	font-size: 1.0em;
+	font-family: "Anaheim";
+	padding: 5px;
+	}
+
+.spanAccountTitle {
+	color: #0068a8;
+	}
+	
+#deregisterElements {
+	width: 300px;
+	text-align: center;
+	color: #000000;
+	margin: auto;
+	}
